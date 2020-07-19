@@ -1,0 +1,4 @@
+# copy it to sqlite
+# find track titles, artist names, and album titles.
+select Track.title, Album.title, Artist.name FROM Track JOIN Album JOIN Artist
+ON Track.album_id = Album.id AND Album.artist_id = Artist.id
